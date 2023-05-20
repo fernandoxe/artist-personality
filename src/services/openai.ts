@@ -28,7 +28,7 @@ export const getResponse = async (songs: string[]) => {
 export const getUserMessage = (songs: string[]) => {
   const message: ChatCompletionRequestMessage = {
     role: 'user',
-    content: `Based on these ${process.env.ARTIST} songs: ${songs.join(', ')}. Analyzing the lyrics. Without write these song names. Without write the words: 'these songs', 'lyrics', 'songs', 'album', 'track', 'artist', 'Taylor Swift'. In only one paragraph. Write a text that describes a person. Write in spanish, continue the text: Eres`,
+    content: `Based on these ${process.env.ARTIST} songs: ${songs.join(', ')}. Analyzing the lyrics. Without write these song names. Without write the words: "these songs", "lyrics", "songs", "album", "track", "artist", "${process.env.ARTIST}". In only one paragraph. Write a text that describes a person. Write in spanish, continue the text: Eres`,
   }
   return message;
 };
