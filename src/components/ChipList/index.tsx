@@ -10,7 +10,7 @@ export const ChipList = ({ items, disabled, onDelete }: ChipListProps) => {
   };
 
   return (
-    <div className="flex gap-2 flex-wrap text-sm">
+    <div className="flex gap-2 justify-center flex-wrap text-sm">
       {items.map((item) => (
         <div key={item} className="flex gap-2 items-center justify-between px-2 py-1 bg-purple-300 rounded-md">
           <span>{item}</span>
