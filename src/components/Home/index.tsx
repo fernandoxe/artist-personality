@@ -50,7 +50,7 @@ export const Home = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 flex flex-col justify-center gap-4">
+    <div className="max-w-xl mx-auto p-4 flex flex-col justify-center gap-4">
       <h1 className="text-[#2f1233] text-xl font-bold text-center">
         Tu personalidad según estas canciones
       </h1>
